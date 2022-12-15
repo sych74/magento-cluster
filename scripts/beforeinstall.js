@@ -19,7 +19,7 @@ resp.nodes.push({
   nodeType: "mariadb-dockerized",
   flexibleCloudlets: ${settings.db_flexibleCloudlets:16},
   fixedCloudlets: ${settings.db_fixedCloudlets:1},
-  tag: "10.4.22",
+  tag: "10.4.25",
   count: 2,
   nodeGroup: "sqldb",
   restartDelay: 10,
@@ -59,7 +59,7 @@ resp.nodes.push({
 }, {
   nodeType: "litespeedphp",
   count: ${settings.cp_count:2},
-  engine: "php7.4",
+  engine: "php8.1",
   flexibleCloudlets: ${settings.cp_flexibleCloudlets:32},
   fixedCloudlets: ${settings.cp_fixedCloudlets:1},
   nodeGroup: "cp",
